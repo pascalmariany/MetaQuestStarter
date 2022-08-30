@@ -1,0 +1,14 @@
+{
+  "name": "com.unity.feature.vr",
+  "displayName": "VR",
+  "version": "1.0.0",
+  "type": "feature",
+  "_upm": {
+    "quickstart": "https://docs.unity3d.com/2021.2/Documentation/Manual/VRFeature.html"
+  },
+  "description": "Create Immersive virtual reality experiences with Unity’s VR Feature Set.  The VR Feature Set provides a starting point for VR development, installing all relevant packages necessary for adding interactivity to your apps.",
+  "dependencies": {
+    "com.unity.xr.oculus": "default",
+    "com.unity.xr.openxr": "default"
+  }
+}

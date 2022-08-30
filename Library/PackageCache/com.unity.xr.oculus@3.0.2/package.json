@@ -1,0 +1,34 @@
+{
+  "name": "com.unity.xr.oculus",
+  "displayName": "Oculus XR Plugin",
+  "version": "3.0.2",
+  "unity": "2021.2",
+  "unityRelease": "0b17",
+  "description": "Provides display and input support for Oculus devices.",
+  "keywords": [
+    "oculus",
+    "xr",
+    "vr",
+    "virtual",
+    "rift",
+    "quest",
+    "xreditorsubsystem"
+  ],
+  "dependencies": {
+    "com.unity.xr.management": "4.2.0"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/xr.sdk.oculus.git",
+    "type": "git",
+    "revision": "30917dfa04b89ef9dd41d238a70c569702b25eaa"
+  },
+  "_upm": {
+    "changelog": "### Fixed\r\n- Fixed an incorrect depth texture format being requested on mobile\r\n- Fixed compilation errors on platforms where `ENABLE_VR` is not currently defined\r\n- Fixed an issue where the mirror view blit was using an incorrect source rect\r\n- Early engine init on mobile now looks for a boot.config entry rather than using an intent filter query, resolving potential Android app store issues\r\n\r\n### Known Issues\r\n- `Unity.XR.Oculus.Stats.PerfMetrics` entries currently return `0` when using the OpenXR runtime, which is the default in the 2.x and 3.x versions of the Oculus XR Plugin package\r\n- `Unity.XR.Oculus.Stats.AppMetrics` entries currently return `0` on all Oculus runtimes\r\n- For both of the above, the suggested replacement is to use the profiling tools available via the Oculus Developer Hub: https://developer.oculus.com/documentation/unity/ts-odh-logs-metrics/"
+  },
+  "relatedPackages": {
+    "com.unity.xr.oculus.tests": "3.0.2"
+  },
+  "upmCi": {
+    "footprint": "4ab35f650bf25b59466d5ac298afff5b0404ad07"
+  }
+}
